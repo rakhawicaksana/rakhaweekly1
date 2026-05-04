@@ -1,0 +1,71 @@
+/* Reset dasar */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0f0f0f; /* hitam */
+    color: #e0e0e0; /* abu terang */
+}
+
+/* Judul */
+h1 {
+    text-align: center;
+    color: silver;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+/* Navigasi menu (table) */
+table {
+    margin: auto;
+    border-collapse: collapse;
+    background-color: #1a1a1a;
+}
+
+td {
+    padding: 12px 20px;
+    text-align: center;
+}
+
+/* Link menu */
+a {
+    text-decoration: none;
+    color: #c0c0c0;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Efek hover */
+a:hover {
+    color: white;
+    border-bottom: 2px solid silver;
+    background-color: #333;
+}
+
+/* Gambar */
+img {
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 0 15px rgba(192,192,192,0.3);
+}
+
+/* Biodata */
+h3 {
+    margin-left: 50px;
+    color: silver;
+}
+
+p {
+    margin-left: 50px;
+    line-height: 1.8;
+}
+
+/* Footer / navigasi bawah */
+hr {
+    margin: 30px 50px;
+    border: 1px solid #333;
+}
+
+div {
+    margin-bottom: 20px;
+}
