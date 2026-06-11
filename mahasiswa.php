@@ -11,54 +11,46 @@
     </h1>
     <table border="1" align="center" cellspacing="0" cellpadding="10px">
     <tr>
-        <td><a href="index.html">Home</a></td>
-        <td><a href="about.html">Profile</a></td>
-        <td><a href="contact.html">Contact</a></td>
-        <td> <a href="mahasiswa.html">Data mahasiswa</a></td>
+        <td><a href="index.php">Home</a></td>
+        <td><a href="about.php">Profile</a></td>
+        <td><a href="contact.php">Contact</a></td>
+        <td> <a href="mahasiswa.php">Data mahasiswa</a></td>
     </tr>
     </table>
     <br><br>
     <h2>Data Mahasiswa</h2>
     <table border="1" cellpadding="5px">
+    <a href="tambah data.php"><button>Tambah data</button></a>
     <tr>
-        <td rowspan="2">Baris 1 kolom 1&2</td>
-        <td colspan="2">Baris 1, Kolom 1&2</td>
-        <!-- <td>Baris 1, Kolom 2</td> -->
+        <th>No</th>
+        <th>Nama</th>
+        <th>NIM</th>
+        <th>Prodi</th>
+        <th>Email</th>
+        <th>NO WA</th>
+        <th>Foto</th>
+        <th>aksi</th>
+
     </tr>
         <tr>
-        <td>Baris 2, Kolom 1</td>
-        <td>Baris 2, Kolom 2</td>
-        <!-- <td>Baris 2, Kolom 3</td> -->
+        <td>1</td>
+        <td>Fikri utami</td>
+        <td>1213141341313</td>
+        <td>Teknologi informasi</td>
+        <td>pikri@gmail.com</td>
+        <td>0814325267169</td>
+         <td>
+            <img src ="/asset/mobil.jpg" alt="" width='60px'>
+         </td>
+          <td>
+            <a href="editdata.php"><button>Edit</button></a>
+            <a href="deletedata.php"><button>Hapus</button></a>
+          </td>
+
     </tr>
     </table>
-    <br><br>
-    <table border="1" cellpadding="5px">
-        <tr>
-            <td>b1k1</td>
-            <td>b1k2</td>
-            <td>b1k3</td>
-            <td>b1k4</td>
-        </tr>
-         <tr>
-            <td>b2k1</td>
-            <td rowspan="2"colspan="2">b2k2</td>
-            <td colspan="2">b2k3</td>
-            
-        </tr>
-         <tr>
-            <td>b3k1</td>
-            <td>b3k2</td>
-            
-           
-            
-        </tr>
-         <tr>
-            <td>b4k1</td>
-            <td>b4k2</td>
-            <td>b4k3</td>
-            <td>b4k4</td>
-        </tr>
-    </table>
+   <br><br>
+    
 </body>
 </html>
 

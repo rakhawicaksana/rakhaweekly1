@@ -12,10 +12,10 @@
          
         <table border="1" align="center" cellspacing="0" cellpadding="10px">
             <tr>
-                <td><a href="index.html">Home</a></td>
-                <td><a href="about.html">Profile</a></td>
-                <td><a href="contact.html">Contact</a></td>
-                <td> <a href="mahasiswa.html">Data mahasiswa</a></td>
+                <td><a href="index.php">Home</a></td>
+                <td><a href="about.php">Profile</a></td>
+                <td><a href="contact.php">Contact</a></td>
+                <td> <a href="mahasiswa.php">Data mahasiswa</a></td>
             </tr>
         </table>
         <br><br>

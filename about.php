@@ -17,7 +17,7 @@ minat pada pengembangan teknologi dan dunia digital. Saya terus berupaya
 meningkatkan pengetahuan dan keterampilan sebagai bekal menghadapi
 tantangan di era transformasi digital.
     </body>
-    <a href="index.html">Beranda</a>
-    <a href="about.html">Tentang</a>
-    <a href="contact.html">Kontak</a>
+    <a href="index.php">Beranda</a>
+    <a href="about.php">Tentang</a>
+    <a href="contact.php">Kontak</a>
 </html>

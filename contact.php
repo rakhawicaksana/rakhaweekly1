@@ -17,7 +17,7 @@
             Linkedin : wayan rakha wicaksana
         </p>
     </body>
-    <a href="index.html">Beranda</a>
-    <a href="about.html">Tentang</a>
-    <a href="contact.html">Kontak</a>
+    <a href="index.php">Beranda</a>
+    <a href="about.php">Tentang</a>
+    <a href="contact.php">Kontak</a>
 </html>
