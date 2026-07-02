@@ -1,65 +1,27 @@
+<?php
+   
+   require 'fungsi.php';
+   
+    $query = "SELECT * FROM mahasiswa";
+
+    $mahasiswas = tampildata($query);
+
+    /// object
+    ///ambil data (fetch) dari mhasiswa
+    ///mysqli_fetch_row
+    ///mysqli_fetch_assoc
+    ///mysqli_fetch_array
+    ///mysqli_fetch_object
+    
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Mahasiswa</title>
-</head>
-<body>
-    <h1 align="center">
-    WEB TI RAKHA - 2026
-    </h1>
-    <table border="1" align="center" cellspacing="0" cellpadding="10px">
-    <tr>
-        <td><a href="index.php">Home</a></td>
-        <td><a href="about.php">Profile</a></td>
-        <td><a href="contact.php">Contact</a></td>
-        <td> <a href="mahasiswa.php">Data mahasiswa</a></td>
-    </tr>
-    </table>
-    <br><br>
-    <h2>Data Mahasiswa</h2>
-    <table border="1" cellpadding="5px">
-    <a href="tambah data.php"><button>Tambah data</button></a>
-    <tr>
-        <th>No</th>
-        <th>Nama</th>
-        <th>NIM</th>
-        <th>Prodi</th>
-        <th>Email</th>
-        <th>NO WA</th>
-        <th>Foto</th>
-        <th>aksi</th>
-
-    </tr>
-        <tr>
-        <td>1</td>
-        <td>Fikri utami</td>
-        <td>1213141341313</td>
-        <td>Teknologi informasi</td>
-        <td>pikri@gmail.com</td>
-        <td>0814325267169</td>
-         <td>
-            <img src ="/asset/mobil.jpg" alt="" width='60px'>
-         </td>
-          <td>
-            <a href="editdata.php"><button>Edit</button></a>
-            <a href="deletedata.php"><button>Hapus</button></a>
-          </td>
-
-    </tr>
-    </table>
-   <br><br>
-    
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <title>Form Data Mahasiswa</title>
-    <style>
+        <style>
         body {
             font-family: Arial, sans-serif;
             background: #111;
@@ -110,8 +72,59 @@
     </style>
 </head>
 <body>
+    <h1 align="center">
+    WEB TI RAKHA - 2026
+    </h1>
+    <table border="1" align="center" cellspacing="0" cellpadding="10px">
+    <tr>
+        <td><a href="index.php">Home</a></td>
+        <td><a href="about.php">Profile</a></td>
+        <td><a href="contact.php">Contact</a></td>
+        <td> <a href="mahasiswa.php">Data mahasiswa</a></td>
+    </tr>
+    </table>
+    <br><br>
+    <h2>Data Mahasiswa</h2>
+    <table border="1" cellpadding="5px">
+    <a href="tambah data.php"><button>Tambah data</button></a>
+    <tr>
+        <th>No</th>
+        <th>Nama</th>
+        <th>NIM</th>
+        <th>Prodi</th>
+        <th>Email</th>
+        <th>NO WA</th>
+        <th>Foto</th>
+        <th>aksi</th>
 
-<div class="container">
+    </tr>
+    <?php
+    $no = 1;
+    foreach($mahasiswas as $mhs){
+    
+    ?>
+    
+        <tr>
+       <td><?= $no ?></td>
+        <td><?php echo $mhs['nama']?></td>
+        <td><?php echo $mhs['nim']?></td>
+        <td><?php echo $mhs['prodi']?></td>
+        <td><?php echo $mhs['email']?></td>
+        <td><?= $mhs['nama']?></td>
+         <td>
+            <img src ="/asset/mobil.jpg" alt="" width='60px'>
+         </td>
+          <td>
+            <a href="editdata.php"><button>Edit</button></a>
+            <a href="deletedata.php?id=<?=$mhs["id"]?>"onclick = "return confirm('seriusan ni?')><button>Hapus</button></a>
+
+</td>
+            
+    </tr>
+    <?php $no++;} ?>
+    </table>
+   <br><br>
+   <div class="container">
     <h2>Form Data Mahasiswa</h2>
 
     <form>
@@ -187,6 +200,6 @@
         <button type="submit">Submit</button>
     </form>
 </div>
-
+    
 </body>
 </html>
