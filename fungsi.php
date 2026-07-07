@@ -60,8 +60,12 @@ function edit($data){
     $prodi = htmlspecialchars($data["prodi"]);
     $email = htmlspecialchars($data["email"]);
     $no_hp = htmlspecialchars($data["nohp"]);
-    $foto = htmlspecialchars($data["foto"]);
-
+    
+    $namafoto= $files["name"];
+    $tmpfoto = $files["tmp_name"];
+    $path= "asset/$namafoto";
+    if(move_uploaded_file($tmpfoto,$path))
+{
     $query = "UPDATE mahasiswa SET
             nama='$nama',
             nim='$nim',
@@ -74,6 +78,7 @@ function edit($data){
     mysqli_query($koneksi,$query);
 
     return mysqli_affected_rows($koneksi);
+}
 }
 
 //====================
